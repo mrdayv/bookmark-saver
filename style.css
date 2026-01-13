@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, black, rgb(47, 38, 126), black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(86, 55, 201);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgb(0, 0, 0);
+}
+
+hr {
+  border: rgb(86, 55, 201) solid 1px;
+  border-radius: 5px;
+  margin: 20px;
+  width: 75%;
+  justify-self: center;
+}
+
+.app-container {
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.45));
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(190, 190, 190);
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(86, 55, 201);
+  border: 1px solid white;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-shadow: 1px 1px rgb(0, 0, 0, 0.7);
+}
+
+#add-bookmark:hover {
+  background: linear-gradient(
+    to right,
+    rgb(86, 55, 201, 0.5),
+    rgba(86, 55, 201, 1),
+    rgb(86, 55, 201, 0.5)
+  );
+  transition: 500ms;
+}
+
+#bookmark-list {
+  list-style: none;
+  padding: 0;
+}
+
+#bookmark-list li {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#bookmark-list a {
+  color: rgb(86, 55, 201);
+  text-decoration: none;
+}
+
+#bookmark-list button {
+  background-color: rgb(238, 0, 0);
+  box-shadow: 2px 2px 5px black;
+  border: none;
+  padding: 7px 15px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+#bookmark-list button:hover {
+  background-color: rgb(153, 0, 0);
+  box-shadow: 2px 2px 8px black;
+  transition: 250ms;
+  transform: scale(1.1, 1.1);
+}
